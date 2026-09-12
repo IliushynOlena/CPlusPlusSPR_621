@@ -57,25 +57,35 @@ int main()
 	int hour_in_2000_year;
 	hour_in_2000_year = daysIn_2000_Year * hours_in_day;
 	cout << "Hours in 2000 year : " << hour_in_2000_year << endl;
+	cout << "Hours in 2000 year : " << hour_in_2000_year << endl;
+	cout << "Hours in 2000 year : " << hour_in_2000_year << endl;
 
 
-	float discount = 0.05;
-	float cost = 80.99;
-	int count = 4;
+	//float discount = 0.05;
+	//float cost = 80.99;
+	//int count = 4;
 
-	cout << "Enter cost of product : ";
-	cin >> cost;
-	cout << "Enter count : ";
-	cin >> count;
-	cout << endl;
-	float price;
-	price = cost * count -  discount * cost * count;
-	cout << "You need to pay : " << price << " grn" << endl;
+	//cout << "Enter cost of product : ";
+	//cin >> cost;
+	//cout << "Enter count : ";
+	//cin >> count;
+	//cout << endl;
+	//float price;
+	//price = cost * count -  discount * cost * count;
+	//cout << "You need to pay : " << price << " grn" << endl;
 
-	int number;
-	cout << " Enter number : ";
-	cin >> number;
-	cout << "Your number : " << number << endl;
+	//int number;
+	//cout << " Enter number : ";
+	//cin >> number;
+	//cout << "Your number : " << number << endl;
+
+
+
+
+
+
+
+
 
 
 
