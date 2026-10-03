@@ -179,7 +179,14 @@ int main()
 		}
 		
 	}
-
+	int number;
+	for (; ; )
+	{
+		cout << "Enter number : ";
+		cin >> number;
+		if (number == 0)break;
+		sum += number;
+	}
 	/*
 	int magicNumber = 2;
 	cout << "\n=======================================" << endl;
@@ -208,7 +215,7 @@ int main()
 
 	}
 	*/
-	cout << endl;
+	/*cout << endl;
 	for (int i = 0; i < 25; i++)
 	{
 		if (i % 2 == 0)cout << i << " ";
@@ -223,7 +230,22 @@ int main()
 	{
 		if (i % 2 == 1)continue;
 		cout << i << " ";
+	}*/
+	cout << "\n------------------------------------" << endl;
+	int i = -100;
+	while (i >= 0)
+	{
+		cout << i << " ";
+		i--;
 	}
+	cout << "\n------------------------------------" << endl;
+	int a = -100;
+	do
+	{
+		cout << a << " ";
+		a--;
+
+	} while (a >= 0);
 
 }
 
