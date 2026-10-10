@@ -6,6 +6,8 @@ int main()
 {
 	
 	srand(time(NULL));// time(0) 01.01.1970
+
+	
   
 	int a;
 	a = rand();////0....32767
