@@ -107,9 +107,46 @@ int SummaTwoArray(int arr[][10], int rows, int cols)
 	}
 	return summa;
 }
+int IsLeapYear(int year)
+{
+	if ((year % 400 == 0) || (year % 4 == 0 and year % 100 != 0))
+		return 1;
+	return 0;
+}
+int dayInMonth(int month)
+{
+	int days[13] = { 0,31,28,31,30,31,31,30,31,30,31,30,31 };
+	return days[month];
+}
+int summaDays(int day,int month,int year)
+{
+	int total_days = 0;
+	for (int y = 1; y < year; y++)
+	{
+		total_days += 365;
+		total_days += IsLeapYear(y);
+	}
+	for (int m = 1; m < month; m++)
+	{
+		total_days += dayInMonth(m);
+	}
+	total_days += day;
+	return total_days;
+}
+void DifferenceDate(int fDay, int fMonth, int fYear, int sDay, int sMonth, int sYear)
+{
+	int first_date = summaDays(fDay, fMonth, fYear);
+	int last_date = summaDays(sDay, sMonth, sYear);
+	cout <<  first_date << endl;
+	cout << last_date << endl;
+	int diff = last_date - first_date;
+	cout << "Diffffff  "<< diff;
+}
 
 int main()
 {
+	DifferenceDate(1, 1, 2026, 1, 2, 2026);
+	/*
 	const int rows = 5;
 	const int cols = 10;
 	int mass[rows][cols];
@@ -139,7 +176,7 @@ int main()
 	Star(5);
 	Star(10);
 	Star(15);
-
+	*/
 
 }
 void Hello()
