@@ -68,6 +68,9 @@ int main()
 	*max = 1000;
 	ShowArray(arr, size);
 
+
+	int a = 5, b = 8;
+	int* pa = &a, *pb = &b;
 	//cout << arr << endl;
 	//cout << *arr << endl;
 	//cout << arr + 1 << endl;
